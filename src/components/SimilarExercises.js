@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Stack, Typography } from "@mui/material";
 import HorizontalScrollbar from "./HorizontalScrollbar";
-import Loader from "./Loader";
+// import Loader from "./Loader";
 const SimilarExercises = ({ targetMuscleExercises, equipmentExercises }) => {
   return (
     <Box sx={{ mt: { lg: "100px", xs: "0px" } }}>
@@ -22,7 +22,8 @@ const SimilarExercises = ({ targetMuscleExercises, equipmentExercises }) => {
         {equipmentExercises.length ? (
           <HorizontalScrollbar data={equipmentExercises} />
         ) : (
-          <Loader />
+          "Loading"
+          //   <Loader />
         )}
       </Stack>
     </Box>
